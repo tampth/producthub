@@ -46,12 +46,15 @@ export async function ghListItems<T extends object>(entity: string): Promise<T[]
   const res = await fetch(url, { headers: apiHeaders(), cache: 'no-store' })
   if (!res.ok) return []
 
-  const files = (await res.json()) as Array<{ name: string; download_url: string }>
+  const files = (await res.json()) as Array<{ name: string; url: string }>
   const mdFiles = files.filter(f => f.name.endsWith('.md'))
 
   const items = await Promise.all(
     mdFiles.map(async f => {
-      const raw = await fetch(f.download_url, { cache: 'no-store' }).then(r => r.text())
+      // Use GitHub API URL (not download_url CDN) to avoid 5-min cache staleness after writes
+      const fileRes = await fetch(f.url, { headers: apiHeaders(), cache: 'no-store' })
+      const fileData = await fileRes.json() as { content: string }
+      const raw = Buffer.from(fileData.content.replace(/\n/g, ''), 'base64').toString('utf8')
       const { data, content: body } = matter(raw)
       const bf = BODY_FIELD[entity]
       if (bf && body.trim()) data[bf] = body.trim()
