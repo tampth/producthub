@@ -12,13 +12,13 @@ tags:
   - bac-si
   - tham-van
   - omni
-updatedAt: '2026-06-28'
+updatedAt: '2026-06-30'
 ---
 ## Tổng quan
 
 Xây dựng luồng leo thang (escalation) từ agent tư vấn thông thường sang bác sĩ/dược sĩ trong cùng một cuộc gọi, không để khách phải gọi lại. Áp dụng cho Vaccine, Xét nghiệm và LC247.
 
-## Vấn đề hiện tại
+## Vấn đề 
 
 - Khi khách cần tư vấn chuyên sâu (y tế, dược), agent không thể chuyển ngay — khách phải gọi lại
 - Không có queue riêng cho bác sĩ/dược sĩ trong từng dịch vụ
