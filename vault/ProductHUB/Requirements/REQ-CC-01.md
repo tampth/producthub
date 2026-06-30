@@ -54,4 +54,4 @@ Khách hàng, Sale eCom/Tư vấn, Bác sĩ, CTV, Shop, BGB Vận hành, ICS, MP
 - Threshold Abandon Rate theo từng queue có khác nhau không?
 - Báo cáo KPI xuất theo ngày/tuần/tháng?
 - Ai là owner vận hành mỗi queue?
-- Tích hợp với CRM/RSA để hiện lịch sử khi nhấc máy?
+- Tích hợp với CRM/RSA để hiện lịch sử khi nhấc máy
