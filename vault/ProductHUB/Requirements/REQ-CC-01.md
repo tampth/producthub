@@ -1,7 +1,7 @@
 ---
 id: REQ-CC-01
 title: V?n h�nh t?ng d�i inbound
-status: review
+status: approved
 priority: high
 product: Call Center
 author: thuyduong.vu
