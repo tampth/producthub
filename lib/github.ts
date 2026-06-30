@@ -79,7 +79,7 @@ export async function ghWriteItem(entity: string, id: string, item: Record<strin
   const content = Buffer.from(matter.stringify(body, fm)).toString('base64')
   const sha = await getSha(filePath)
 
-  await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${filePath}`, {
+  const res = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${filePath}`, {
     method: 'PUT',
     headers: { ...apiHeaders(), 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -88,6 +88,10 @@ export async function ghWriteItem(entity: string, id: string, item: Record<strin
       ...(sha ? { sha } : {}),
     }),
   })
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({})) as { message?: string }
+    throw new Error(`GitHub ${res.status}: ${err.message ?? res.statusText}`)
+  }
 }
 
 export async function ghDeleteItem(entity: string, id: string): Promise<void> {
@@ -95,9 +99,13 @@ export async function ghDeleteItem(entity: string, id: string): Promise<void> {
   const sha = await getSha(filePath)
   if (!sha) return
 
-  await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${filePath}`, {
+  const res = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${filePath}`, {
     method: 'DELETE',
     headers: { ...apiHeaders(), 'Content-Type': 'application/json' },
     body: JSON.stringify({ message: `delete: ${id}`, sha }),
   })
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({})) as { message?: string }
+    throw new Error(`GitHub ${res.status}: ${err.message ?? res.statusText}`)
+  }
 }
