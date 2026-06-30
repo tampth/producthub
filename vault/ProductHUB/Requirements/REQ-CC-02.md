@@ -5,20 +5,19 @@ epic: OMNI / Call Center
 status: Draft
 priority: High
 author: tampt48
-date: 2026-06-25
+date: '2026-06-25T00:00:00.000Z'
 tags:
   - call-center
   - miss-call
   - outbound
   - omni
+updatedAt: '2026-06-30'
 ---
-
 ## Tổng quan
 
 Xây dựng hệ thống theo dõi và xử lý cuộc gọi nhỡ (missed call) tự động: lọc spam, định tuyến về đúng queue/platform, và quản lý vòng đời xử lý lại (callback).
 
-## Vấn đề hiện tại
-
+## Vấn đề 
 - Cuộc gọi nhỡ không được ghi nhận đầy đủ
 - Không phân biệt được cuộc gọi nhỡ hợp lệ vs spam ngắn
 - Không biết queue nào bị nhỡ để phân công lại đúng agent
