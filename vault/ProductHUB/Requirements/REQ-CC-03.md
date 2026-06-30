@@ -2,7 +2,7 @@
 id: REQ-CC-03
 title: Tham vấn bác sĩ trong cuộc gọi
 epic: OMNI / Call Center
-status: Draft
+status: review
 priority: High
 author: tampt48
 date: '2026-06-25T00:00:00.000Z'
@@ -12,13 +12,13 @@ tags:
   - bac-si
   - tham-van
   - omni
-updatedAt: '2026-06-30'
+updatedAt: '2026-06-28'
 ---
 ## Tổng quan
 
 Xây dựng luồng leo thang (escalation) từ agent tư vấn thông thường sang bác sĩ/dược sĩ trong cùng một cuộc gọi, không để khách phải gọi lại. Áp dụng cho Vaccine, Xét nghiệm và LC247.
 
-## Vấn đề 
+## Vấn đề hiện tại
 
 - Khi khách cần tư vấn chuyên sâu (y tế, dược), agent không thể chuyển ngay — khách phải gọi lại
 - Không có queue riêng cho bác sĩ/dược sĩ trong từng dịch vụ
