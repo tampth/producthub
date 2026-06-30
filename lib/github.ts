@@ -1,6 +1,6 @@
 import matter from 'gray-matter'
 
-const TOKEN = process.env.GITHUB_TOKEN
+const TOKEN = process.env.GITHUB_TOKEN?.replace(/^﻿/, '').trim()
 const OWNER = process.env.GITHUB_OWNER ?? 'tampth'
 const REPO = process.env.GITHUB_REPO ?? 'producthub'
 const VAULT_PATH = 'vault/ProductHUB'
