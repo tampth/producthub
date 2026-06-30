@@ -1,7 +1,7 @@
 ---
 id: REQ-CC-01
 title: Vận hành tổng đài inbound
-status: approved
+status: draft
 priority: high
 product: Call Center
 author: thuyduong.vu
