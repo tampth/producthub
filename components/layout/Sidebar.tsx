@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
 import {
   Home, Newspaper, Lightbulb, Bug, CalendarDays, MessageSquare,
   Users, FileText, List, ClipboardList, BookOpen, ChevronDown,
-  ChevronRight, Package, BarChart3, Map, Eye, Rss, Target, Settings, Rocket,
+  ChevronRight, Package, BarChart3, Map, Eye, Rss, Target, Settings, Rocket, SquareCheckBig,
   type LucideIcon,
 } from 'lucide-react'
 import { useState } from 'react'
@@ -51,6 +51,7 @@ const NAV = [
     label: 'BA/PO Workspace',
     items: [
       { href: '/initiatives', icon: Rocket, label: 'Initiatives' },
+      { href: '/tasks', icon: SquareCheckBig, label: 'Tasks' },
       { href: '/backlog', icon: List, label: 'Product Backlog' },
       { href: '/requirements', icon: ClipboardList, label: 'Requirements Hub' },
       { href: '/decisions', icon: FileText, label: 'Decision Log' },

@@ -17,6 +17,7 @@ const BODY_FIELD: Record<string, string> = {
   feedback: 'content',
   glossary: 'definition',
   initiatives: 'problem',
+  tasks: 'description',
 }
 
 function folder(entity: string) {

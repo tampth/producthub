@@ -18,6 +18,7 @@ const BODY_FIELD: Record<string, string> = {
   feedback: 'content',
   glossary: 'definition',
   initiatives: 'problem',
+  tasks: 'description',
 }
 
 function hubDir(entity: string): string {
@@ -82,7 +83,7 @@ export function deleteItem(entity: string, id: string): void {
 export function getVaultInfo() {
   const hubPath = path.join(VAULT_PATH, HUB_FOLDER)
   const connected = !!VAULT_PATH && fs.existsSync(VAULT_PATH)
-  const entities = ['ideas', 'bugs', 'backlog', 'requirements', 'decisions', 'news', 'team', 'demos', 'feedback', 'glossary', 'initiatives']
+  const entities = ['ideas', 'bugs', 'backlog', 'requirements', 'decisions', 'news', 'team', 'demos', 'feedback', 'glossary', 'initiatives', 'tasks']
   const counts: Record<string, number> = {}
   if (connected) {
     for (const e of entities) {

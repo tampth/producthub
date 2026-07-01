@@ -143,6 +143,22 @@ export interface Initiative {
   tags: string[]
 }
 
+export type TaskStatus = 'open' | 'in-progress' | 'done' | 'blocked' | 'cancelled'
+
+export interface Task {
+  id: string
+  title: string
+  status: TaskStatus
+  priority: Priority
+  product: string
+  reporter: string
+  assignees: string[]
+  date: string
+  dueDate?: string
+  tags?: string[]
+  description: string
+}
+
 export interface FeedbackItem {
   id: string
   title: string

@@ -25,6 +25,7 @@ const PAGE_TITLES: Record<string, string> = {
   '/glossary': 'Glossary',
   '/team': 'Meet the Division',
   '/settings': 'Settings & Obsidian',
+  '/tasks': 'Tasks',
 }
 
 export function Header() {
