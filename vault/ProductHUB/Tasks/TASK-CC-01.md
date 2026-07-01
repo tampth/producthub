@@ -4,7 +4,7 @@ title: Xác thực đầu số VBN - MPT & FTI
 status: in-progress
 priority: high
 product: Call Center
-reporter: thuyduong.vu
+reporter: tampth
 assignees:
   - Nam
 date: '2026-07-01T00:00:00.000Z'
@@ -25,4 +25,4 @@ Checklist tình hình xác thực đầu số VBN đến thời điểm hiện t
 - [x] Mobifone: Đã trình ký chị Quyên. Sau khi hoàn tất ký duyệt sẽ gửi lại hồ sơ cho phía FTI để tiếp tục thực hiện các bước xác thực
 
 ## Updates
-- **2026-07-01** `thuyduong.vu` — Gửi checklist tình hình xác thực đầu số VBN cho anh Nam xác nhận
+- **2026-07-01** `tampth` — Gửi checklist tình hình xác thực đầu số VBN cho anh Nam xác nhận

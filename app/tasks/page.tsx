@@ -203,7 +203,7 @@ function TasksPageContent() {
       status: 'open',
       priority: newPriority,
       product: newProduct.trim() || 'General',
-      reporter: 'thuyduong.vu',
+      reporter: 'tampth',
       assignees: newAssignees.split(',').map(s => s.trim()).filter(Boolean),
       date: new Date().toISOString().slice(0, 10),
       dueDate: newDueDate || undefined,

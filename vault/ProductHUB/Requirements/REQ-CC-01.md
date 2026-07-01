@@ -4,7 +4,7 @@ title: Vận hành tổng đài inbound
 status: draft
 priority: high
 product: Call Center
-author: thuyduong.vu
+author: tampth
 date: '2024-01-15'
 tags:
   - call-center
