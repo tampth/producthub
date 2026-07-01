@@ -17,8 +17,8 @@ tags:
 Checklist tình hình xác thực đầu số VBN đến thời điểm hiện tại.
 
 ## MPT
-- [x] Viettel: Đã hoàn thành
-- [x] Mobifone: Đang chờ gửi hồ sơ trình ký, dự kiến hoàn tất vào đầu tuần sau (06/07)
+- [ ] Viettel: Đã hoàn thành
+- [ ] Mobifone: Đang chờ gửi hồ sơ trình ký, dự kiến hoàn tất vào đầu tuần sau (06/07)
 
 ## FTI
 - [ ] Viettel: Đã lên VNeID, hiện đang chờ anh Nam thực hiện xác thực
